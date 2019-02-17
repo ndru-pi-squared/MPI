@@ -12,6 +12,7 @@
 //Current version multiplies ints instead of doubles, so no SIMD exploitation
 //too many processes (more than nrows+1) results in infinte blank loop(waiting
 //this is spaghetti code from drafting. i would like to revise this ASAP
+//i believe the callstack on the server im using may be growing too large. getting segfaults when i add anything
 
 int j=0, h = 0, k = 0; int lastOpen = 0;
 int *recv2;
